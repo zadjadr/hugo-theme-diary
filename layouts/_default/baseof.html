@@ -17,30 +17,31 @@
         
             {{- partial "mobile-footer.html" . -}}
             <!-- mobile footer -->
-            </div>
-    {{ partial "journal.html" .}}
+        </div>
+        {{ partial "journal.html" .}}
 
-        <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-                <script>
-                window.cookieconsent.initialise({
-                "palette": {
-                "popup": {
-                "background": "#237afc"
-                },
-                "button": {
-                "background": "transparent",
-                "text": "#fff",
-                "border": "#fff"
-                }
-                },
-                "content": {
-                "message": "Diese Website verwendet Cookies, um Ihnen eine bestmögliche Nutzung zu gewährleisten.",
-                "dismiss": "Verstanden",
-                "link": "Weitere Informationen",
-                "href": "https://zrezai-dev.de/datenschutz/"
-                }
-                });
+        <script src="js/cookieconsent.min.js"></script>
+        <script>
+            window.cookieconsent.initialise({
+            "palette": {
+            "popup": {
+            "background": "#237afc"
+            },
+            "button": {
+            "background": "transparent",
+            "text": "#fff",
+            "border": "#fff"
+            }
+            },
+            "content": {
+            "message": "Diese Website verwendet Cookies, um Ihnen eine bestmögliche Nutzung zu gewährleisten.",
+            "dismiss": "Verstanden",
+            "link": "Weitere Informationen",
+            "href": "https://zrezai-dev.de/datenschutz/"
+            }
+            });
         </script>
-    <script src="{{"/js/journal.js" | relURL}}"></script>
+
+        <script src="{{"/js/journal.js" | relURL}}"></script>
     </body>
 </html>
