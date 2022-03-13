@@ -9,6 +9,7 @@ $dark-mode-front-container-background: #282828;
 
 body.night {
   background: $dark-mode-back-container-background;
+
   :root {
     --color_555: #ccc;
     --color_ededed: #000;
@@ -26,9 +27,11 @@ body.night {
 
   a {
     color: $light-accent;
+
     &:hover {
       color: $deep-light-accent !important;
     }
+
     @media screen and (max-width: $single-column-max-width) {
       &:hover {
         text-decoration: none !important;
@@ -45,20 +48,24 @@ body.night {
       background: none;
       color: $dark-mode-text !important;
     }
+
     color: $dark-mode-text !important;
   }
 
   table * {
     color: $dark-mode-text;
   }
+
   .gt-btn * {
     color: black !important;
   }
+
   .gt-header-textarea {
-    background: lighten($dark-mode-back-container-background, 20%)  !important;
+    background: lighten($dark-mode-back-container-background, 20%) !important;
   }
+
   .gt-header-preview {
-    background: lighten($dark-mode-back-container-background, 20%)  !important;
+    background: lighten($dark-mode-back-container-background, 20%) !important;
   }
 
   .side-container {
@@ -67,17 +74,20 @@ body.night {
     $nav-item-hover-color-darken: 30%;
     $nav-item-active-background-alpha: 0.03;
     $nav-item-active-color-darken: 20%;
+
     * {
       color: $dark-mode-text;
     }
+
     .nav-head {
+
       //border-right: 4px solid $color-accent;
       &:hover {
-        border-right: 2px solid
-          rgba($color-accent, $nav-item-hover-indicator-alpha);
+        border-right: 2px solid rgba($color-accent, $nav-item-hover-indicator-alpha);
         background: rgba($color-accent, $nav-item-hover-background-alpha);
         color: lighten($color-accent, $nav-item-hover-color-darken);
       }
+
       &.active {
         border-right: 2px solid $color-accent;
         background: rgba($color-accent, $nav-item-active-background-alpha);
@@ -91,55 +101,62 @@ body.night {
       $nav-item-active-background-alpha: 0.1;
       $nav-item-active-color-lighten: 20%;
       flex-grow: 1;
+
       .nav-link-item {
         color: $dark-mode-text !important;
+
         //border-right: 4px solid transparent;
         &:hover {
-          border-right: 2px solid
-            rgba($color-accent, $nav-item-hover-indicator-alpha);
-          color: lighten(
-            $color-accent,
-            $nav-item-hover-color-lighten
-          ) !important;
+          border-right: 2px solid rgba($color-accent, $nav-item-hover-indicator-alpha);
+          color: lighten($color-accent,
+              $nav-item-hover-color-lighten ) !important;
         }
+
         &.active {
           border-right: 2px solid $color-accent;
           background: rgba($color-accent, $nav-item-active-background-alpha);
-          color: lighten(
-            $color-accent,
-            $nav-item-active-color-lighten
-          ) !important;
+          color: lighten($color-accent,
+              $nav-item-active-color-lighten ) !important;
         }
       }
     }
   }
+
   .stream-container {
     .post-head-wrapper-text-only * {
       color: $dark-mode-text;
     }
+
     .post {
       background: $dark-mode-front-container-background;
+
       @media screen and (max-width: $single-column-max-width) {
         background: $dark-mode-back-container-background;
       }
+
       .post-pagination a:not([href]) {
         color: $dark-mode-text;
       }
+
       .post-comment-wrapper * {
         color: $dark-mode-text;
       }
     }
+
     .post-list-container {
       background: $dark-mode-front-container-background;
+
       @media screen and (max-width: $single-column-max-width) {
         background: $dark-mode-back-container-background;
       }
+
       &,
-      > * {
+      >* {
         .post-item-wrapper {
           * {
             color: $dark-mode-text;
           }
+
           .post-item-info-wrapper {
             @media screen and (max-width: $single-column-max-width) {
               box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
@@ -151,8 +168,10 @@ body.night {
             box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
             background: $dark-mode-front-container-background;
           }
+
           &:not(.post-item-wrapper-no-hover):hover {
             background: rgba(255, 255, 255, 0.03);
+
             * {
               color: $deep-light-accent !important;
             }
@@ -166,18 +185,22 @@ body.night {
     * {
       color: $dark-mode-text;
     }
+
     @media screen and (max-width: $single-column-max-width) {
       .nav-dropdown-toggle {
         &:hover {
           color: #3f587d !important;
         }
       }
+
       .navbar-brand {
         color: $dark-mode-text;
+
         &:hover {
           color: $dark-mode-text;
         }
       }
+
       .nav-background {
         background: $dark-mode-front-container-background;
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -191,9 +214,11 @@ body.night {
         font-family: $sans-preferred-font-list;
         color: $deep-light-accent;
       }
+
       .single-column-header-title {
         color: $dark-mode-text;
       }
+
       .single-column-header-subtitle {
         color: $dark-mode-text;
       }
@@ -204,12 +229,15 @@ body.night {
     @media screen and (max-width: $single-column-max-width) {
       .drawer-content {
         background: $dark-mode-front-container-background;
+
         .toc {
           background-color: lighten($dark-mode-front-container-background, 10%);
         }
+
         .drawer-menu {
           .drawer-menu-item {
             color: $dark-mode-text;
+
             &.active {
               border-right: 2px solid $color-accent;
               color: $light-accent;
@@ -226,12 +254,15 @@ body.night {
 
   .toc {
     background-color: $dark-mode-front-container-background;
+
     * {
       color: $dark-mode-text;
     }
+
     a {
       color: $dark-mode-text;
     }
+
     .toc-active {
       color: $light-accent !important;
     }
@@ -246,10 +277,12 @@ body.night {
   h6,
   li {
     color: $dark-mode-text;
+
     *:not(a) {
       color: $dark-mode-text;
     }
   }
+
   .pagination * {
     color: $dark-mode-text;
   }
@@ -269,6 +302,7 @@ body.night {
   .tags {
     .tag a {
       color: white;
+
       span {
         color: white;
       }

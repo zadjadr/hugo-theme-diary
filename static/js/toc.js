@@ -29,7 +29,7 @@ var spy = function () {
       if (meetUnread == false) {
         meetUnread = true;
         if (idx > 0) {
-          lastElemName = elems[idx - 1].id; 
+          lastElemName = elems[idx - 1].id;
         }
       }
       Array.from(navElems).forEach((e) => {
