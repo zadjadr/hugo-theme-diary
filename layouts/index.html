@@ -1,7 +1,7 @@
 
 {{ define "main" }}
 
-<div ref="streamContainer" class="stream-container">
+
     <div class="post-list-container post-list-container-no-background">
         <div style="position: relative;">
             <img style="width:100%; " src="{{ .Site.Params.mainvideo }}">
@@ -27,7 +27,8 @@
                                 <div class="post-item-image-wrapper">
                                 <div class="post-item-image"
                                 {{ if $image }}
-                                    style="background-image: url('{{ $image.Permalink }}')"
+                                    {{ $thumbnail := $image.Resize "690x360" }}
+                                    style="background-image: url('{{ $thumbnail.Permalink }}')"
                                 {{ else }}
                                     style="background-image: url('{{ $featured_image | absURL}}')"
                                 {{ end }}
@@ -41,6 +42,5 @@
             {{ end }}
             </a>
     </div>
-</div>
 
 {{ end }}
