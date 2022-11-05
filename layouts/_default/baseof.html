@@ -20,7 +20,7 @@
         </div>
         {{ partial "journal.html" .}}
 
-        <script src="js/cookieconsent.min.js"></script>
+        <script src="{{"/js/cookieconsent.min.js" | relURL}}"></script>
         <script>
             window.cookieconsent.initialise({
             "palette": {
