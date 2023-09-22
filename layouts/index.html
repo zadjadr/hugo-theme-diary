@@ -21,10 +21,12 @@
                 <div class="post-item-image-wrapper">
                     <div class="post-item-image" {{ if $image }} {{ $thumbnail :=$image.Resize "690x360" }}
                         style="background-image: url('{{ $thumbnail.RelPermalink }}')" {{ else }}
-                        style="background-image: url('{{ $featured_image | absURL}}')" {{ end }} </div>
-                    </div>
+                        style="background-image: url('{{ $featured_image | absURL}}')" {{ end }}></div>
                 </div>
                 {{ end }}
+            </div>
+        </div>
+        {{ end }}
     </a>
 </div>
 
